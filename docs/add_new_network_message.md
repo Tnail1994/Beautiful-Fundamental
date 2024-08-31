@@ -21,5 +21,5 @@
     services.AddTransient<INetworkMessage, MessageMock>();
     ```
 
-       **_Note:_** The `ITransformerService` needs the `INetwork` registration to automatically transform messages to its specific value.
+    **_Note:_** The `ITransformerService` needs the `INetwork` registration to automatically transform messages to its specific value.
 
