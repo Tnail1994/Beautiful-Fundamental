@@ -61,7 +61,7 @@ namespace BeautifulFundamental.Server
 				new Lazy<ISessionLoop>(provider.GetRequiredService<ISessionLoop>));
 		}
 
-		public static void CreateAndSetupConfig(IServiceCollection services)
+		public static IConfigurationRoot CreateAndSetupConfig(IServiceCollection services)
 		{
 			var config = FundamentalApplicationBuilder.CreateAndSetupConfig(services);
 
@@ -77,6 +77,8 @@ namespace BeautifulFundamental.Server
 			services.AddSingleton<IAuthenticationSettings>(_ =>
 				config.GetSection(nameof(AuthenticationSettings)).Get<AuthenticationSettings>() ??
 				AuthenticationSettings.Default);
+
+			return config;
 		}
 	}
 }
