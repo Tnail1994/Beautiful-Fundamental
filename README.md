@@ -31,6 +31,7 @@ internal class Program
 			.ConfigureServices((_, services) =>
 			{
         // --- CONFIGURATION ---
+        
 				var config = FundamentalApplicationBuilder.CreateAndSetupConfig(services);
 			});
 }
@@ -86,6 +87,7 @@ internal class Programm
 			.ConfigureServices((_, services) =>
 			{
 				// --- CONFIGURATION ---
+
 				var config = FundamentalServerApplicationBuilder.CreateAndSetupConfig(services);
 
         // --- SPECIALIZED (EXAMPLE) ---
