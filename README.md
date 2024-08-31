@@ -7,6 +7,10 @@ Explaining how to use on client and server side.
 ### Use for client applications
 **_General Hint:_** Under bin/Dlls you can find the dlls to include to your project.
 
+**_General Hint:_** Please check out the appsettings.example.json file and add it as appsettings.json to your project.
+
+**_Requirement:_** You need server and client certificates for your applications and the CertificatePath in appsettings.json file set.
+
 **How to use it for console applications:**
 ``` C#
 internal class Program
