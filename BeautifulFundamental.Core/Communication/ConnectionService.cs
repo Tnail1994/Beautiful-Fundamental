@@ -152,8 +152,12 @@ namespace BeautifulFundamental.Core.Communication
 					reconnectAttempt++;
 				}
 			}
-			catch (SocketException)
+			catch (SocketException ex)
 			{
+				var msg = ex.Message;
+				this.LogInfo($"SocketException" +
+				             $"Message: {msg}\n" +
+				             $"Stacktrace: {ex.StackTrace}\n", _identificationKey.SessionId);
 				await HandleSocketException(reconnectAttempt, reconnectingAttempt);
 			}
 			catch (Exception ex)

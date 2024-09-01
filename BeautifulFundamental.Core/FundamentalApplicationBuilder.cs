@@ -86,6 +86,12 @@ namespace BeautifulFundamental.Core
 				.AddJsonFile($"appsettings.{environment}.json", optional: true, reloadOnChange: true)
 				.AddEnvironmentVariables()
 				.Build();
+			AddSettingsToContainer(services, config);
+			return config;
+		}
+
+		public static void AddSettingsToContainer(IServiceCollection services, IConfigurationRoot config)
+		{
 			services.AddSingleton<IAsyncClientSettings>(_ =>
 				config.GetSection(nameof(AsyncClientSettings)).Get<AsyncClientSettings>() ??
 				AsyncClientSettings.Default);
@@ -101,7 +107,6 @@ namespace BeautifulFundamental.Core
 			services.AddSingleton<ITlsSettings>(_ =>
 				config.GetSection(nameof(TlsSettings)).Get<TlsSettings>() ??
 				TlsSettings.Default);
-			return config;
 		}
 	}
 }
