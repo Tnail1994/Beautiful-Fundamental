@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeautifulFundamental.Core",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeautifulFundamental.Server", "BeautifulFundamental.Server\BeautifulFundamental.Server.csproj", "{0CECF589-13C9-44BD-B0D4-8E7BD49DEADD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautifulFundamental.Tests", "BeautifulFundamental.Tests\BeautifulFundamental.Tests.csproj", "{2B473875-10FD-4ECE-8DC4-F978E428BD25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0CECF589-13C9-44BD-B0D4-8E7BD49DEADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CECF589-13C9-44BD-B0D4-8E7BD49DEADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CECF589-13C9-44BD-B0D4-8E7BD49DEADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B473875-10FD-4ECE-8DC4-F978E428BD25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B473875-10FD-4ECE-8DC4-F978E428BD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B473875-10FD-4ECE-8DC4-F978E428BD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B473875-10FD-4ECE-8DC4-F978E428BD25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -26,7 +26,7 @@ Easily transform NetworkMessages to your specific object. Automatically reconnec
     <PackageReference Include="Serilog.Sinks.Map" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <InternalsVisibleTo Include="Tests" />
+    <InternalsVisibleTo Include="BeautifulFundamental.Tests" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md">
